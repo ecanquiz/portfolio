@@ -1,0 +1,64 @@
+---
+import {ref} from 'vue'
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+const response = await fetch('https://randomuser.me/api/');
+const data = await response.json();
+const randomUser = data.results[0];
+
+const prueba = ref('fff')
+
+console.log(prueba)
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>About</h1>
+		<Card
+		  href="/"
+		  title="Regresar"
+		  body="Return back"
+		/>
+		<h2>{randomUser.name.first} {randomUser.name.last}</h2>
+		<h2>{randomUser.email}</h2>
+		<h2>{randomUser.location.city}</h2>	
+		
+		
+		<figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+  <img class="w-24 h-24 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512">
+  <div class="pt-6 space-y-4">
+    <blockquote>
+      <p class="text-lg">
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      </p>
+    </blockquote>
+    <figcaption>
+      <div>
+        Sarah Dayan
+      </div>
+      <div>
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+			
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}	
+</style>
