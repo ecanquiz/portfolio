@@ -1,6 +1,7 @@
 ---
 // https://github.com/withastro/astro/tree/main/examples
 import { getCollection } from 'astro:content';
+import i18next, { t } from "i18next";
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -31,7 +32,7 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Ernesto Canquiz"
+					title={t('home.greeting') + " Ernesto Canquiz"} 
 					tagline="I am a Creative developer full stack who is currently based in Caracas, Venezuela."
 					align="start"
 				>
