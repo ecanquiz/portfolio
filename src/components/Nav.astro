@@ -1,7 +1,10 @@
 ---
 import Icon, { Props as IconProps } from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
-import SelectLanguage from '../components/SelectLanguage.vue';
+//import SelectLanguage from '../components/SelectLanguage.vue';
+
+// import i18next, { t } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -22,6 +25,8 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 ---
 
 <nav>
+
+      
 	<div class="menu-header">        
 		<a href="/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
@@ -74,7 +79,12 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 			<div class="theme-toggle">
 				<ThemeToggle />
 			</div>
-			<SelectLanguage />
+			<!--SelectLanguage /-->
+			
+			
+				    
+      <LanguageSelector showFlag={true} class="bg-black text-white rounded py-1 px-2" />
+			
 		</div>
 	</div>
 </nav>
