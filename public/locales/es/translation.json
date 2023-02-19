@@ -4,8 +4,14 @@
     "description": "¡Aquí está la descripción de mi increíble sitio web.!"
   },
   "home": {
-    "title": "¡Bienvenido a mi increíble sitio web!",
+    "title": "¡Bienvenido a mi sitio web!",
     "subtitle": "Esta es una cadena <0>más compleja</0> de traducir, combinada con <1>elementos html</1>, como un <2>un enlace genial</2>.",
-    "greeting": "Hola, mi nombre es"
+    "greeting": "Hola, mi nombre es",
+    "comment": "Soy un desarrollador creativo full stack que actualmente reside en Caracas, Venezuela."
+  },
+  "nav": {
+    "home": "Inicio",
+    "work": "Trabajo",
+    "about": "Acerca de"
   }
 }

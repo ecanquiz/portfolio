@@ -28,10 +28,11 @@ const projects = (await getCollection("work"))
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
+		<!--h1>{t("home.title")}</h1-->
 			<header class="hero">
 				<Hero
-					title={t('home.greeting') + " Ernesto Canquiz"} 
-					tagline="I am a Creative developer full stack who is currently based in Caracas, Venezuela."
+					title={t('home.greeting') + " Ernesto Canquiz"}
+					tagline={t('home.comment')}
 					align="start"
 				>
 					<div class="roles">
