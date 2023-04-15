@@ -1,4 +1,4 @@
-# ernest-site-astro
+# Site
 Ernest'site AstroJs
 
 ## Astro Starter Kit: Basics
