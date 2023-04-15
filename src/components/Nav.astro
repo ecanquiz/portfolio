@@ -9,9 +9,9 @@ import { LanguageSelector } from "astro-i18next/components";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: t('nav.home'), href: '/' },
-	{ label: t('nav.work'), href: '/work/' },
-	{ label: t('nav.about'), href: '/about/' },
+	{ label: t('nav.home'), href: '/site/' },
+	{ label: t('nav.work'), href: '/site/work/' },
+	{ label: t('nav.about'), href: '/site/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -29,7 +29,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 
       
 	<div class="menu-header">        
-		<a href="/" class="site-title">
+		<a href="/site/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
 			Ernesto Canquiz
 		</a>
@@ -54,7 +54,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== '/' && Astro.url.pathname.startsWith(href)),
+										(href !== '/site/' && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}
