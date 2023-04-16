@@ -7,11 +7,18 @@
     "title": "Welcome to my website!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "greeting": "Hello, my name is",
-    "comment": "I am a Creative developer full stack who is currently based in Caracas, Venezuela."
+    "comment": "I am a Creative developer full stack who is currently based in Caracas, Venezuela.",
+    "selected-work": "Selected Work",
+    "selected-work-detail": "Take a look below at some of my featured work from the past few years."
   },
   "nav": {
     "home": "Home",
     "work": "Work",
     "about": "About"
+  },
+  "skills": {
+    "full-stack-web-developer": "In charge of managing each of the aspects concerning the creation and maintenance of a web application. Expert in Front-End and Back-End development.",
+    "agile-coach": "Agility expert with the necessary competencies and skills to help people adopt the agile mindset, enabling you to understand agile principles and values.",
+    "dev-ops": "Set of practices that bring together software development ( Dev ) and IT operations ( Ops ). Its goal is to speed up the software development life cycle and provide high-quality continuous delivery."  
   }
 }
