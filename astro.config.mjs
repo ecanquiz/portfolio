@@ -5,8 +5,8 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ejimenez123.github.io',
-  base: '/site',
+  site: 'https://ecanquiz.github.io',
+  base: '/',
   integrations: [
     astroI18next(),
     tailwind({
