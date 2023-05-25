@@ -1,5 +1,5 @@
 ---
-title: And many more things on the CaribesTIC site
+title: And many more things on the ecanquiz site
 publishDate: 2019-12-01 00:00:00
 img: /portfolio/assets/stock-2.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
